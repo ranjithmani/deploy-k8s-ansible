@@ -1,0 +1,6 @@
+[master]
+master-ip
+
+[worker]
+worker1-ip
+worker2-ip
