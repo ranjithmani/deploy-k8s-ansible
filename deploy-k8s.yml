@@ -58,7 +58,7 @@
   remote_user: root
   tasks:
     - name: Init the k8s cluster
-      shell: "kubeadm init --apiserver-advertise-address=master-ip --pod-network-cidr=172.16.0.0/16"
+      shell: "kubeadm init --apiserver-advertise-address={{ master-ip }} --pod-network-cidr=172.16.0.0/16"
     - name: get the token for join
       command: "kubeadm token create --print-join-command"
       changed_when: false
